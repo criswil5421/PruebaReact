@@ -1,0 +1,26 @@
+{
+  "name": "cydoc-mock-api",
+  "version": "0.0.1",
+  "description": "Cydoc Mock Api",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "node buildScripts/generateMockData",
+    "start": "json-server --watch src/api/db.json --port 3001"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.btg.com.pe/git/cydoc-mock-api"
+  },
+  "keywords": [
+    "cydoc",
+    "mock",
+    "api"
+  ],
+  "author": "Germán Enríquez",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^6.0.0-alpha.7",
+    "json-schema-faker": "^0.5.0-rcv.41",
+    "json-server": "^0.17.0"
+  }
+}
